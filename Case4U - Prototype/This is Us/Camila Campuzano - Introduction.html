@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case4U - Camlia Campuzano</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Change background color */
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        #header {
+            background-color: #007bff; /* Change background color for header */
+            color: #FFFFFF;
+            padding: 20px; /* Add padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            font-size: 48px; /* Increase font size */
+            margin: 0; /* Remove margin */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+        }
+        h2 {
+            font-size: 32px; /* Increase font size */
+            color: #007bff; /* Change font color */
+            margin-top: 30px; /* Add margin */
+        }
+        a.button {
+            padding: 10px 20px; /* Adjust padding to make it look like a button */
+            background-color: #007bff; /* Button background color */
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Add transition effect */
+        }
+        a.button:hover {
+            background-color: #0056b3; /* Darker background color on hover */
+        }
+        .section {
+            margin-bottom: 40px; /* Add margin between sections */
+            padding: 0 20px; /* Add padding to limit text width */
+        }
+        .member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto 10px; /* Adjusted margin */
+            border: 4px solid #007bff; /* Add border around the image */
+            cursor: pointer; /* Change cursor to pointer */
+            transition: transform 0.3s ease; /* Add transition effect */
+        }
+        .member-image:hover {
+            transform: scale(1.1); /* Increase size on hover */
+        }
+        .enlarged {
+            width: 300px; /* Increased width when enlarged */
+            height: 300px; /* Increased height when enlarged */
+        }
+        #contact {
+            background-color: #007bff; /* Change background color for contact section */
+            color: #FFFFFF; /* Set text color */
+            padding: 50px 20px; /* Add padding */
+            margin: 0 20px; /* Add margin to limit text width */
+        }
+        #contact h2 {
+            font-size: 32px; /* Increase font size */
+        }
+        #contact p {
+            font-size: 18px; /* Set font size */
+            margin-top: 20px; /* Add margin top */
+        }
+        #instagram-logo {
+            height: 20px; /* Adjust the height of the Instagram logo */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Case4U - Camlia Campuzano</h1>
+        <!-- Cart Button -->
+        <div id="cart-button">
+            <!-- Hyperlink to the Cart page with cart icon -->
+            <h2><a href="cart.html" class="button"><img src="Pictures/Cart.png" alt="Cart" style="vertical-align: middle; height: 24px;"> </a></h2>
+        </div>
+        <!-- Shop Now Button -->
+        <div>
+            <!-- Hyperlink to the Shop Now page -->
+            <h2><a href="shop.html" class="button">Shop now</a></h2>
+        </div>
+    </div>
+    <div id="content">
+        <!-- Introduction of Camlia Campuzano -->
+        <div class="section">
+            <!-- Clickable image -->
+            <img src="Pictures/CamilaPerfil.jpg" alt="Camlia Campuzano" class="member-image" onclick="toggleSize(this)">
+            <h2>Camlia Campuzano</h2>
+            <p>Position: Lead Designer</p>
+            <p>My name is Camila Belén Campuzano Bareiro, I am 20 years old, and I am from Paraguay. I completed high school at Colegio Experimental Paraguay Brasil in 2021. The following year, I began my studies in Industrial Engineering at UPTP. During my third year of studies, I had the opportunity to participate in a student exchange program in Taiwan. Currently, I am completing this exchange program at NTUST, where I am also studying Industrial Engineering.
+                Regarding my work experience, I have undertaken some part-time jobs during summer vacations. For example, I worked as an assistant at a photography studio and also completed an internship at a construction company during my time in high school. Although the tasks were not complicated, I learned a lot about the work environment.
+                In my free time, I enjoy outdoor activities such as running, cycling, and sports. I also have hobbies such as reading, watching movies or series, listening to music, and spending time with friends, as well as traveling with my family. I like to go out with my friends to discover new dining spots, whether it's for brunch together, dining in a nice restaurant, or simply exploring new places and taking photos to create beautiful memories. Additionally, I enjoy visiting museums and art galleries to explore new exhibitions.
+                In the future, I hope to complete my degree in Industrial Engineering, obtain my diploma, and later secure a scholarship to pursue a master's degree abroad, preferably in the United States. After graduating, my goal is to return to Paraguay and work in a field related to my studies.
+                </p>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For any inquiries or assistance, feel free to contact us:</p>
+        <p>Email: info@case4u.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <!-- Added social media icons -->
+        <div>
+            <a href="#" style="margin-right: 10px;"><img src="facebook-icon.png" alt="Facebook"></a>
+            <!-- Adjusted height of the Instagram logo -->
+            <a href="#"><img id="instagram-logo" src="Pictures/HomePage/Instagram.jpeg" alt="Instagram"></a>
+        </div>
+    </section>
+    <script>
+        function toggleSize(image) {
+            image.classList.toggle('enlarged');
+        }
+    </script>
+</body>
+</html>

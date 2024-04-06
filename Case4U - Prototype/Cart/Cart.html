@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case4U Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Choose Your Phone Model and Color</h1>
+    </header>
+    <div class="container">
+        <form>
+            <div>
+                <label for="phone-model">Select Phone Model:</label>
+                <select id="phone-model">
+                    <option value="iphone">iPhone</option>
+                    <option value="samsung">Samsung Galaxy</option>
+                    <option value="google">Google Pixel</option>
+                </select>
+            </div>
+            <div>
+                <label for="phone-color">Select Color:</label>
+                <select id="phone-color">
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Add to Cart</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+h

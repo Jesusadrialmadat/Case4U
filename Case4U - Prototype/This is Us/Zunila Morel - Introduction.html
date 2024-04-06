@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case4U - Zunilda Morel</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Change background color */
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        #header {
+            background-color: #007bff; /* Change background color for header */
+            color: #FFFFFF;
+            padding: 20px; /* Add padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            font-size: 48px; /* Increase font size */
+            margin: 0; /* Remove margin */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+        }
+        h2 {
+            font-size: 32px; /* Increase font size */
+            color: #007bff; /* Change font color */
+            margin-top: 30px; /* Add margin */
+        }
+        a.button {
+            padding: 10px 20px; /* Adjust padding to make it look like a button */
+            background-color: #007bff; /* Button background color */
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Add transition effect */
+        }
+        a.button:hover {
+            background-color: #0056b3; /* Darker background color on hover */
+        }
+        .section {
+            margin-bottom: 40px; /* Add margin between sections */
+            padding: 0 20px; /* Add padding to limit text width */
+        }
+        .shop-description {
+            font-size: 18px; /* Set font size for the description */
+            margin: 0 auto 20px; /* Center the description and reduce bottom margin */
+            max-width: 600px; /* Set maximum width */
+            background-color: #007bff; /* Add background color */
+            color: #fff; /* Set text color */
+            padding: 20px; /* Add padding */
+            border-radius: 10px; /* Add border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        }
+        #contact {
+            background-color: #007bff; /* Change background color for contact section */
+            color: #FFFFFF; /* Set text color */
+            padding: 50px 0; /* Add padding */
+            margin: 0 20px; /* Add margin to limit text width */
+        }
+        #contact h2 {
+            font-size: 32px; /* Increase font size */
+        }
+        #contact p {
+            font-size: 18px; /* Set font size */
+            margin-top: 20px; /* Add margin top */
+        }
+        #cart-button {
+            margin-right: 20px; /* Add margin to separate from Shop Now button */
+            margin-left: auto; /* Move to the right */
+        }
+        #instagram-logo {
+            height: 20px; /* Adjust the height of the Instagram logo */
+        }
+        .member-container {
+            display: inline-block;
+            margin: 20px;
+        }
+        .member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto 10px; /* Adjusted margin */
+            border: 4px solid #007bff; /* Add border around the image */
+            cursor: pointer; /* Change cursor to pointer */
+            transition: transform 0.3s ease; /* Add transition effect */
+        }
+        .member-image:hover {
+            transform: scale(1.1); /* Increase size on hover */
+        }
+        .enlarged {
+            width: 300px; /* Increased width when enlarged */
+            height: 300px; /* Increased height when enlarged */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Case4U - Zunilda Morel</h1>
+        <!-- Cart Button -->
+        <div id="cart-button">
+            <!-- Hyperlink to the Cart page with cart icon -->
+            <h2><a href="cart.html" class="button"><img src="Pictures/Cart.png" alt="Cart" style="vertical-align: middle; height: 24px;"> </a></h2>
+        </div>
+        <!-- Shop Now Button -->
+        <div>
+            <!-- Hyperlink to the Shop Now page -->
+            <h2><a href="shop.html" class="button">Shop now</a></h2>
+        </div>
+    </div>
+    <div id="content">
+        <!-- Introduction of Zunilda Morel -->
+        <div class="section">
+            <!-- Clickable image -->
+            <img src="Pictures/ZunildaPerfil.jpg" alt="Zunilda Morel" class="member-image" onclick="toggleSize(this)">
+            <h2>Zunilda Morel</h2>
+            <p>Position: Human Resources Manager</p>
+            <p>Zunilda Inés Morel Vera was born in San Juan Nepomuceno, a small city in the department of Caazapa- Paraguay, on Monday, December 2, 2002.
+                I moved to Coronel Oviedo-Caaguazu, where I lived most of my life. I am the younger sister of 3 beautiful and brave women, and the daughter of Elva Zunilda, a dedicated, humble and beautiful teacher.
+                I am currently living in Taipei Taiwan, it is the first time I leave my country, this experience is undoubtedly incredible and I hope to return home full of anecdotes to tell, photos to show and knowledge to share
+                Education:
+                -Hight school: Colegio Nacional Dr. Pedro Pablo Peña (2020)
+                -University: Universidad Politecnica Tiwan Paraguay(2022- present)
+                Skill:
+                -Programming Languages: C++, python, Cplex
+                soft skills:
+                -Team work
+                -Willingness to learn
+                language:
+                -English
+                -Spanish
+                -Guarani
+                Volunteering:
+                -SuperKids foundation 
+                -Techo</p>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For any inquiries or assistance, feel free to contact us:</p>
+        <p>Email: info@case4u.com</p>
+        <p>Phone: +1 (123) 456
